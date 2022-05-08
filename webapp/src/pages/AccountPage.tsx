@@ -148,7 +148,7 @@ class WorkspacesPage extends Component<Props, State> {
                                                         <span className="text-xs"><Button submit title="Change email" secondary small /></span>
 
                                                     </div>
-                                                    <div className="p-1 text-red-500 text-xs font-bold">{form.touched.email && form.errors.email}</div>
+                                                    <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.email && form.errors.email}</></div>
 
                                                     <div className="p-1 text-xs font-bold">{formikBag.status}</div>
                                                 </div>
@@ -209,7 +209,7 @@ class WorkspacesPage extends Component<Props, State> {
                                                         </div>
 
                                                     </div>
-                                                    <div className="p-1 text-red-500 text-xs font-bold">{form.touched.name && form.errors.name}</div>
+                                                    <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.name && form.errors.name}</></div>
 
                                                     <div className="p-1 text-xs font-bold">{formikBag.status}</div>
                                                 </div>

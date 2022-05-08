@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-class NewCard extends Component {
+
+class NewCard extends Component<{children?: React.ReactNode}> {
   render() {
     return (
       <div className="p-1 w-36 h-24  border border-dashed border-gray-300 rounded-sm items-center justify-center ">

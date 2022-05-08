@@ -267,7 +267,7 @@ class EntityDetailsDescription extends Component<Props, State> {
                                                     <textarea autoFocus rows={20} value={form.values.description} onChange={form.handleChange} placeholder="Description" id="description" className="rounded p-2  border w-full  	" />
                                                 </div>
                                                 <span className="text-xs right p-1">The description supports formatting through <a rel="noopener noreferrer" target="_blank" className="link" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>.</span>
-                                                <div className="p-1 text-red-500 text-xs font-bold">{form.touched.description && form.errors.description}</div>
+                                                <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.description && form.errors.description}</></div>
                                             </div>
                                         )}
                                     </Field>
@@ -301,4 +301,5 @@ class EntityDetailsDescription extends Component<Props, State> {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(onClickOutside(EntityDetailsDescription))
+// export default connect(mapStateToProps, mapDispatchToProps)(onClickOutside(EntityDetailsDescription))
+export default connect(mapStateToProps, mapDispatchToProps)(EntityDetailsDescription)

@@ -88,7 +88,7 @@ class ResetPasswordPage extends Component<Props, State> {
                                                 <div className="flex flex-row items-baseline">
                                                     <div className="flex flex-col w-full">
                                                         <div><input type="password" value={form.values.password} onChange={form.handleChange} placeholder="password" id="password" className="rounded p-2 border w-64 text-lg 	" /></div>
-                                                        <div className="p-1 text-red-500 text-xs font-bold">{form.touched.password && form.errors.password && form.errors.password}</div>
+                                                        <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.password && form.errors.password && form.errors.password}</></div>
                                                     </div>
                                                 </div>
                                             )}

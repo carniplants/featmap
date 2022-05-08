@@ -134,7 +134,7 @@ class CreateWorkspaceModal extends Component<Props, State> {
                               <input autoFocus type="text" value={form.values.name} onChange={form.handleChange} placeholder="Name" id="name" className="rounded p-2 border w-full	" />
                             </div>
                           </div>
-                          <div className="p-1 text-red-500 text-xs font-bold">{form.touched.name && form.errors.name}</div>
+                          <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.name && form.errors.name}</></div>
                         </div>
                       )}
                     </Field>

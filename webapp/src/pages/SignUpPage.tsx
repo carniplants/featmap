@@ -108,7 +108,7 @@ class SignUp extends Component<Props> {
                                             <div className="flex flex-col    items-baseline sm:flex-row">
                                                 <div className=" flex flex-col w-full">
                                                     <div><input type="text" value={form.values.workspace} onChange={form.handleChange} placeholder="workspace name" id="workspaceName" className="rounded p-2 border w-full text-lg	" /></div>
-                                                    <div className="m-1 text-red-500 text-xs font-bold">{form.touched.workspaceName && form.errors.workspaceName && form.errors.workspaceName}</div>
+                                                    <div className="m-1 text-red-500 text-xs font-bold"><>{form.touched.workspaceName && form.errors.workspaceName && form.errors.workspaceName}</></div>
                                                 </div>
                                             </div>
                                         )}
@@ -120,7 +120,7 @@ class SignUp extends Component<Props> {
                                             <div className="flex  flex-row items-baseline">
                                                 <div className=" flex flex-col w-full">
                                                     <div><input type="text" value={form.values.name} onChange={form.handleChange} placeholder="Name, e.g. John Smith" id="name" className=" w-full rounded p-2 border  text-lg	" /></div>
-                                                    <div className="m-1 text-red-500 text-xs font-bold">{form.touched.name && form.errors.name && form.errors.name}</div>
+                                                    <div className="m-1 text-red-500 text-xs font-bold"><>{form.touched.name && form.errors.name && form.errors.name}</></div>
                                                 </div>
                                             </div>
                                         )}
@@ -133,7 +133,7 @@ class SignUp extends Component<Props> {
 
                                                 <div className="flex flex-col w-full">
                                                     <div><input type="text" value={form.values.email} onChange={form.handleChange} placeholder="Work email" id="email" className="rounded p-2 border w-full text-lg	" /></div>
-                                                    <div className="p-1 text-red-500 text-xs font-bold">{form.touched.email && form.errors.email && form.errors.email}</div>
+                                                    <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.email && form.errors.email && form.errors.email}</></div>
                                                 </div>
                                             </div>
                                         )}
@@ -145,7 +145,7 @@ class SignUp extends Component<Props> {
                                             <div className="flex flex-row items-baseline">
                                                 <div className="flex flex-col w-full">
                                                     <div><input type="password" value={form.values.password} onChange={form.handleChange} placeholder="Password" id="password" className="rounded p-2 border w-full text-lg	" /></div>
-                                                    <div className="p-1 text-red-500 text-xs font-bold">{form.touched.password && form.errors.password && form.errors.password}</div>
+                                                    <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.password && form.errors.password && form.errors.password}</></div>
                                                 </div>
                                             </div>
                                         )}

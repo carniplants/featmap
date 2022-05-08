@@ -6,6 +6,7 @@ interface Props {
   night?: boolean
   text?: string
   smallIcon?: boolean
+  children?: React.ReactNode
 }
 
 interface State {

@@ -26,5 +26,5 @@ services:
                     postgres:
                         condition: service_healthy
                 volumes:
-                        - ${PWD}/conf.json:/opt/featmap/conf.json
+                        - C:\Users\tkley\Desktop\featmap_new\featmap\conf.json:/opt/featmap/conf.json
 

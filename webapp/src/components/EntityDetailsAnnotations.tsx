@@ -231,4 +231,5 @@ class EntityDetailsAnnotations extends Component<Props, State> {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(onClickOutside(EntityDetailsAnnotations))
+// export default connect(mapStateToProps, mapDispatchToProps)(onClickOutside(EntityDetailsAnnotations))
+export default connect(mapStateToProps, mapDispatchToProps)(EntityDetailsAnnotations)

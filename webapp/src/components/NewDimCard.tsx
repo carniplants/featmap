@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class NewDimCard extends Component {
+class NewDimCard extends Component<{children?: React.ReactNode}> {
   render() {
     return (
       <div className="flex p-1 w-36 h-24  border border-dashed border-gray-200 rounded items-center justify-center ">

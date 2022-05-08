@@ -142,7 +142,7 @@ class CreateProjectModal extends Component<Props, State> {
                       {({ form }: FieldProps<formValues>) => (
                         <div className="flex flex-col">
                           <div><input autoFocus type="text" value={form.values.title} onChange={form.handleChange} placeholder="Title" id="title" className="rounded p-2 border w-full	" /></div>
-                          <div className="p-1 text-red-500 text-xs font-bold">{form.touched.title && form.errors.title}</div>
+                          <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.title && form.errors.title}</></div>
                         </div>
                       )}
                     </Field>

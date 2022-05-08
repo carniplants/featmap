@@ -163,7 +163,7 @@ class WorkspaceSettingsPage extends Component<Props, State> {
                                                 }
                                                 )
                                         }}
-                                    >
+                                    ><>
                                         {(formikBag: FormikProps<changeRoleForm>) => (
                                             <Form>
                                                 {formikBag.status && formikBag.status.msg && <div>{formikBag.status.msg}</div>}
@@ -182,7 +182,7 @@ class WorkspaceSettingsPage extends Component<Props, State> {
                                                     <Button secondary small submit title="Change role" />
                                                 </div>
                                             </Form>
-                                        )}
+                                        )}</>
                                     </Formik>
                                     }
                                 </div>
@@ -213,7 +213,7 @@ class WorkspaceSettingsPage extends Component<Props, State> {
                                                 }
                                                 )
                                         }}
-                                    >
+                                    ><>
                                         {(formikBag: FormikProps<changeRoleForm>) => (
                                             <Form>
                                                 {formikBag.status && formikBag.status.msg && <div>{formikBag.status.msg}</div>}
@@ -221,7 +221,7 @@ class WorkspaceSettingsPage extends Component<Props, State> {
                                                     <Button warning submit small title="Delete" />
                                                 </div>
                                             </Form>
-                                        )}
+                                        )}</>
                                     </Formik>
                                 </div>
                             </div>
@@ -258,12 +258,12 @@ class WorkspaceSettingsPage extends Component<Props, State> {
                                                 }
                                                 )
                                         }}
-                                    >
+                                    ><>
                                         {(formikBag: FormikProps<{}>) => (
                                             <Form>
                                                 <p className="text-xs"><Button small warning submit title="Leave workspace" /></p>
                                             </Form>
-                                        )}
+                                        )}</>
                                     </Formik>
                                 </div>
                                 :
@@ -541,12 +541,12 @@ class WorkspaceSettingsPage extends Component<Props, State> {
                                                                             }
                                                                             )
                                                                     }}
-                                                                >
+                                                                ><>
                                                                     {(formikBag: FormikProps<{}>) => (
                                                                         <Form>
                                                                             <span className="text-xs"><Button small secondary submit title="Cancel invite" /></span>
                                                                         </Form>
-                                                                    )}
+                                                                    )}</>
                                                                 </Formik>
                                                             </div>
                                                             {!hasExpired && <div className="ml-1">

@@ -297,7 +297,7 @@ class EntityDetailsTitle extends Component<Props, State> {
                                                 <div >
                                                     <input autoFocus onFocus={handleFocus} type="text" value={form.values.title} onChange={form.handleChange} placeholder="Title" id="title" className="rounded p-2  border w-full  text-xl	" />
                                                 </div>
-                                                <div className="p-1 text-red-500 text-xs font-bold">{form.touched.title && form.errors.title}</div>
+                                                <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.title && form.errors.title}</></div>
                                             </div>
                                         )}
                                     </Field>
@@ -316,4 +316,5 @@ class EntityDetailsTitle extends Component<Props, State> {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(onClickOutside(EntityDetailsTitle))
+// export default connect(mapStateToProps, mapDispatchToProps)(onClickOutside(EntityDetailsTitle))
+export default connect(mapStateToProps, mapDispatchToProps)(EntityDetailsTitle)

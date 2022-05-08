@@ -506,6 +506,7 @@ class EntityDetailsBody extends Component<Props, State> {
       default:
     }
 
+
     return (
       <div className="flex flex-col">
         <div className={"flex w-full h-4 " + (this.props.entity.kind === "project" ? "" : colorToBackgroundColorClass(this.props.entity.color))} />
@@ -513,11 +514,32 @@ class EntityDetailsBody extends Component<Props, State> {
 
           <div className="flex flex-col w-full p-2  ">
 
-            <EntityDetailsAnnotations viewOnly={this.props.viewOnly} open={open} card={this.props.entity} demo={this.props.demo} edit={false} close={() => alert("close")} />
+            <EntityDetailsAnnotations
+                viewOnly={this.props.viewOnly}
+                open={open}
+                card={this.props.entity}
+                demo={this.props.demo}
+                edit={false}
+                close={() => alert("close")}
+            />
 
 
-            <CardDetailsTitle demo={this.props.demo} viewOnly={this.props.viewOnly} card={this.props.entity} app={this.props.application} url={this.props.url} close={this.props.close} />
-            <CardDetailsDescription demo={this.props.demo} viewOnly={this.props.viewOnly} entity={this.props.entity} app={this.props.application} url={this.props.url} close={this.props.close} />
+            <CardDetailsTitle
+                demo={this.props.demo}
+                viewOnly={this.props.viewOnly}
+                card={this.props.entity}
+                app={this.props.application}
+                url={this.props.url}
+                close={this.props.close}
+            />
+            <CardDetailsDescription
+                demo={this.props.demo}
+                viewOnly={this.props.viewOnly}
+                entity={this.props.entity}
+                app={this.props.application}
+                url={this.props.url}
+                close={this.props.close}
+            />
 
             {this.props.entity.kind === "feature" ? (
               <CardDetailsComments demo={this.props.demo} viewOnly={this.props.viewOnly} entity={this.props.entity} app={this.props.application} comments={this.props.comments} open={open} />

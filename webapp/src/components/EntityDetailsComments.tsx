@@ -187,7 +187,7 @@ class EntityDetailsComments extends Component<Props, State> {
                                                     <div >
                                                         <textarea rows={2} value={form.values.description} onChange={form.handleChange} placeholder="Write a comment... " id="comment" className="rounded p-3  border w-full  	" />
                                                     </div>
-                                                    <div className="p-1 text-red-500 text-xs font-bold">{form.touched.comment && form.errors.comment}</div>
+                                                    <div className="p-1 text-red-500 text-xs font-bold"><>{form.touched.comment && form.errors.comment}</></div>
                                                     <div className="flex justify-end">
                                                         <div><Button submit title="Post comment" /> </div>
                                                     </div>

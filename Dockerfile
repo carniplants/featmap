@@ -1,7 +1,7 @@
 FROM golang:alpine
 WORKDIR /src
-RUN apk add --update npm git
-RUN go get -u github.com/jteeuwen/go-bindata/...
+RUN apk add --update npm git go-bindata
+#RUN go get -u github.com/jteeuwen/go-bindata/...
 COPY ./webapp/package.json webapp/package.json
 RUN cd ./webapp && \
     npm install

@@ -98,7 +98,7 @@ class Comment extends Component<Props, State> {
                           <div >
                             <textarea rows={5} onChange={form.handleChange} name="comment" value={form.values.comment} id="comment" className="rounded p-3  border w-full " />
                           </div>
-                          <div className=" text-red-500 text-xs font-bold">{form.touched.comment && form.errors.comment}</div>
+                          <div className=" text-red-500 text-xs font-bold"><>{form.touched.comment && form.errors.comment}</></div>
                           <div className="flex justify-end">
                             <div className="mr-2"><Button primary submit title="Save" /> </div>
                             <div><Button handleOnClick={() => this.setState({ editing: false })} title="Cancel" /> </div>
